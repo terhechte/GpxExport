@@ -1,5 +1,9 @@
 import HealthKit
+#if !os(iOS)
 import WatchKit
+#endif
+
+import CoreLocation
 
 class WorkoutDataStore {
     private var healthStore: HKHealthStore

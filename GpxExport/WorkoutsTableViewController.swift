@@ -1,6 +1,8 @@
 import UIKit
 import HealthKit
+#if !os(iOS)
 import WatchKit
+#endif
 
 class WorkoutsTableViewController: UITableViewController {
 
